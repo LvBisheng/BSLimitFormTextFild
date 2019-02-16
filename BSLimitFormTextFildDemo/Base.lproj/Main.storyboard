@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="没有限制格式" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GdD-Gt-0CB" customClass="BSLimitFormTextFild">
+                                <rect key="frame" x="40" y="60" width="295" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="LrJ-J0-v95"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="只能输入金额(0~99999.99)" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4Ae-9Y-d1y" customClass="BSLimitFormTextFild">
+                                <rect key="frame" x="40" y="120" width="295" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="zXV-aA-Bhs"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="只能输入整数" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fGc-vM-6uW" customClass="BSLimitFormTextFild">
+                                <rect key="frame" x="40" y="180" width="295" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="f7c-nH-dlF"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="最多只能输入11位的数字" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OgR-yO-c6b" customClass="BSLimitFormTextFild">
+                                <rect key="frame" x="40" y="240" width="295" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="Cyv-o5-aRl"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="外部设置delegate自己限制" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="yyv-Jd-g0c" customClass="BSLimitFormTextFild">
+                                <rect key="frame" x="40" y="300" width="295" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="oFI-c5-KFP"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="4Ae-9Y-d1y" firstAttribute="trailing" secondItem="GdD-Gt-0CB" secondAttribute="trailing" id="1Gk-v1-2lJ"/>
+                            <constraint firstItem="OgR-yO-c6b" firstAttribute="top" secondItem="fGc-vM-6uW" secondAttribute="bottom" constant="20" id="2ij-Ih-f1T"/>
+                            <constraint firstItem="fGc-vM-6uW" firstAttribute="trailing" secondItem="GdD-Gt-0CB" secondAttribute="trailing" id="BmN-G4-1Ms"/>
+                            <constraint firstItem="yyv-Jd-g0c" firstAttribute="trailing" secondItem="GdD-Gt-0CB" secondAttribute="trailing" id="CbS-m8-MF7"/>
+                            <constraint firstItem="4Ae-9Y-d1y" firstAttribute="top" secondItem="GdD-Gt-0CB" secondAttribute="bottom" constant="20" id="FAE-eb-UiE"/>
+                            <constraint firstItem="GdD-Gt-0CB" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="G1F-99-caw"/>
+                            <constraint firstItem="4Ae-9Y-d1y" firstAttribute="leading" secondItem="GdD-Gt-0CB" secondAttribute="leading" id="Mun-TY-R1F"/>
+                            <constraint firstItem="OgR-yO-c6b" firstAttribute="trailing" secondItem="GdD-Gt-0CB" secondAttribute="trailing" id="Y2z-4C-TGV"/>
+                            <constraint firstItem="fGc-vM-6uW" firstAttribute="top" secondItem="4Ae-9Y-d1y" secondAttribute="bottom" constant="20" id="YH6-1B-BAV"/>
+                            <constraint firstItem="yyv-Jd-g0c" firstAttribute="top" secondItem="OgR-yO-c6b" secondAttribute="bottom" constant="20" id="iNT-DW-Mbv"/>
+                            <constraint firstItem="OgR-yO-c6b" firstAttribute="leading" secondItem="GdD-Gt-0CB" secondAttribute="leading" id="oE9-zc-tlW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GdD-Gt-0CB" secondAttribute="trailing" constant="40" id="pYf-jF-XT5"/>
+                            <constraint firstItem="fGc-vM-6uW" firstAttribute="leading" secondItem="GdD-Gt-0CB" secondAttribute="leading" id="peu-Uh-dcf"/>
+                            <constraint firstItem="yyv-Jd-g0c" firstAttribute="leading" secondItem="GdD-Gt-0CB" secondAttribute="leading" id="xoH-1n-wD5"/>
+                            <constraint firstItem="GdD-Gt-0CB" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="40" id="zKz-Vl-npT"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="customTF" destination="yyv-Jd-g0c" id="4Vm-D2-Xcl"/>
+                        <outlet property="integerTF" destination="fGc-vM-6uW" id="wlZ-ra-Wyg"/>
+                        <outlet property="limitCountTF" destination="OgR-yO-c6b" id="qfN-tM-FE5"/>
+                        <outlet property="nomalTF" destination="GdD-Gt-0CB" id="btd-jG-rMC"/>
+                        <outlet property="priceTF" destination="4Ae-9Y-d1y" id="H7P-xP-EZt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
