@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -19,47 +17,50 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="没有限制格式" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="GdD-Gt-0CB" customClass="BSLimitFormTextFild">
-                                <rect key="frame" x="40" y="60" width="295" height="40"/>
+                                <rect key="frame" x="40" y="40" width="295" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="LrJ-J0-v95"/>
                                 </constraints>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="只能输入金额(0~99999.99)" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="4Ae-9Y-d1y" customClass="BSLimitFormTextFild">
-                                <rect key="frame" x="40" y="120" width="295" height="40"/>
+                                <rect key="frame" x="40" y="100" width="295" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="zXV-aA-Bhs"/>
                                 </constraints>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="只能输入整数" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="fGc-vM-6uW" customClass="BSLimitFormTextFild">
-                                <rect key="frame" x="40" y="180" width="295" height="40"/>
+                                <rect key="frame" x="40" y="160" width="295" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="f7c-nH-dlF"/>
                                 </constraints>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="最多只能输入11位的数字" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="OgR-yO-c6b" customClass="BSLimitFormTextFild">
-                                <rect key="frame" x="40" y="240" width="295" height="40"/>
+                                <rect key="frame" x="40" y="220" width="295" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="Cyv-o5-aRl"/>
                                 </constraints>
-                                <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="外部设置delegate自己限制" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="yyv-Jd-g0c" customClass="BSLimitFormTextFild">
-                                <rect key="frame" x="40" y="300" width="295" height="40"/>
+                                <rect key="frame" x="40" y="280" width="295" height="40"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="oFI-c5-KFP"/>
                                 </constraints>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="只能输入5个汉字" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="eYS-oX-wOy" customClass="BSLimitFormTextFild">
+                                <rect key="frame" x="40" y="340" width="295" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="RKW-i8-79t"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -68,6 +69,8 @@
                         <constraints>
                             <constraint firstItem="4Ae-9Y-d1y" firstAttribute="trailing" secondItem="GdD-Gt-0CB" secondAttribute="trailing" id="1Gk-v1-2lJ"/>
                             <constraint firstItem="OgR-yO-c6b" firstAttribute="top" secondItem="fGc-vM-6uW" secondAttribute="bottom" constant="20" id="2ij-Ih-f1T"/>
+                            <constraint firstItem="eYS-oX-wOy" firstAttribute="leading" secondItem="GdD-Gt-0CB" secondAttribute="leading" id="3LO-up-btg"/>
+                            <constraint firstItem="eYS-oX-wOy" firstAttribute="trailing" secondItem="GdD-Gt-0CB" secondAttribute="trailing" id="BVF-4I-cya"/>
                             <constraint firstItem="fGc-vM-6uW" firstAttribute="trailing" secondItem="GdD-Gt-0CB" secondAttribute="trailing" id="BmN-G4-1Ms"/>
                             <constraint firstItem="yyv-Jd-g0c" firstAttribute="trailing" secondItem="GdD-Gt-0CB" secondAttribute="trailing" id="CbS-m8-MF7"/>
                             <constraint firstItem="4Ae-9Y-d1y" firstAttribute="top" secondItem="GdD-Gt-0CB" secondAttribute="bottom" constant="20" id="FAE-eb-UiE"/>
@@ -76,6 +79,7 @@
                             <constraint firstItem="OgR-yO-c6b" firstAttribute="trailing" secondItem="GdD-Gt-0CB" secondAttribute="trailing" id="Y2z-4C-TGV"/>
                             <constraint firstItem="fGc-vM-6uW" firstAttribute="top" secondItem="4Ae-9Y-d1y" secondAttribute="bottom" constant="20" id="YH6-1B-BAV"/>
                             <constraint firstItem="yyv-Jd-g0c" firstAttribute="top" secondItem="OgR-yO-c6b" secondAttribute="bottom" constant="20" id="iNT-DW-Mbv"/>
+                            <constraint firstItem="eYS-oX-wOy" firstAttribute="top" secondItem="yyv-Jd-g0c" secondAttribute="bottom" constant="20" id="iV6-Vd-jHb"/>
                             <constraint firstItem="OgR-yO-c6b" firstAttribute="leading" secondItem="GdD-Gt-0CB" secondAttribute="leading" id="oE9-zc-tlW"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GdD-Gt-0CB" secondAttribute="trailing" constant="40" id="pYf-jF-XT5"/>
                             <constraint firstItem="fGc-vM-6uW" firstAttribute="leading" secondItem="GdD-Gt-0CB" secondAttribute="leading" id="peu-Uh-dcf"/>
@@ -85,6 +89,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="chineseTF" destination="eYS-oX-wOy" id="X4j-3o-qEc"/>
                         <outlet property="customTF" destination="yyv-Jd-g0c" id="4Vm-D2-Xcl"/>
                         <outlet property="integerTF" destination="fGc-vM-6uW" id="wlZ-ra-Wyg"/>
                         <outlet property="limitCountTF" destination="OgR-yO-c6b" id="qfN-tM-FE5"/>
@@ -94,6 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="138" y="109"/>
         </scene>
     </scenes>
 </document>

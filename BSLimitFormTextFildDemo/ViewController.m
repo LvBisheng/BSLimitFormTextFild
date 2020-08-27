@@ -16,6 +16,8 @@
 @property (weak, nonatomic) IBOutlet BSLimitFormTextFild *integerTF;
 @property (weak, nonatomic) IBOutlet BSLimitFormTextFild *limitCountTF;
 @property (weak, nonatomic) IBOutlet BSLimitFormTextFild *customTF;
+@property (weak, nonatomic) IBOutlet BSLimitFormTextFild *chineseTF;
+
 
 @end
 
@@ -30,6 +32,8 @@
     self.integerTF.regex = limitRegexInteger;
     // 最多只能输入11位整数
     self.limitCountTF.regex = limitRegexIntegerCount;
+    // 只能输入不多于5个字的汉字
+    self.chineseTF.regex = @"[\u4e00-\u9fa5]{0,5}";
     
     self.customTF.delegate = self;
 }
@@ -48,6 +52,5 @@
     [super touchesBegan:touches withEvent:event];
     [self.view endEditing:YES];
 }
-
 
 @end
